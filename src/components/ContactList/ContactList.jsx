@@ -1,5 +1,5 @@
 import {PropTypes} from "prop-types"; 
-import nanoid from 'nanoid';
+
 import React from "react";
 import ContactListItem from "../ContactListItem/ContactListItem";
 import { List, Button } from  '../ContactList/ContactList.Styled'
