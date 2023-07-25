@@ -1,4 +1,4 @@
-import { ContactForm } from './ContactForm/ContactForm';
+import  ContactForm  from './ContactForm/ContactForm';
 
 import { Container, Title } from './ContactForm/ContactForm.styled';
 

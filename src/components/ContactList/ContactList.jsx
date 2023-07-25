@@ -1,4 +1,4 @@
-import {PropTypes} from "prop-types"; 
+
 
 import React from "react";
 import ContactListItem from "../ContactListItem/ContactListItem";
@@ -7,8 +7,9 @@ import { deleteContact } from "redux/slice";
 import { useSelector, useDispatch } from 'react-redux';
 import { selectVisibleContacts } from '../../redux/selector';
  const ContactList = () => {
-  const contacts = useSelector(selectVisibleContacts);
   const dispatch = useDispatch();
+  const contacts = useSelector(selectVisibleContacts);
+ 
   const onDel = id => {
       dispatch(deleteContact(id))};
    
@@ -16,9 +17,9 @@ import { selectVisibleContacts } from '../../redux/selector';
     <List>   
     {contacts.map(({ id, name, number }) => (
         <li key={id}>
-            <ContactListItem id={id} name={name} number={number}/>
-           <Button type="button" onClick={() => onDel(id)}>Delete</Button>
-        </li>
+            <ContactListItem   id={id} name={name} number={number}/>
+          
+       </li>
     ))}
 </List>
 );
