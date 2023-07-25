@@ -3,10 +3,10 @@ import React from "react";
 import { Input, Label } from "./Filter.Styled";
 import { useDispatch, useSelector } from "react-redux";
 import { addFilter } from '../../redux/slice';
-import { selectFilter } from "../../redux/selector";
+
 export const Filter = () => {
   const dispatch = useDispatch();
-  const filterValue = useSelector(selectFilter);
+  const filterValue = useSelector(state => state.contacts.filter);
   
   
    
